@@ -1,0 +1,13 @@
+@use "../abstracts/_variables" as *;
+
+html * {
+  font-family: $roboto-font;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img{
+  max-width: 100%;
+}
