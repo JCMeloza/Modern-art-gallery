@@ -1,0 +1,4 @@
+@use "../abstracts/mixins" as b;
+.button {
+    @include b.button();
+}
