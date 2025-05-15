@@ -2,12 +2,77 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejemplos responsive con Sass</title>
+    <title>Modern Art Gallery</title>
   </head>
   <body>
-    <h1>Ejemplos Responsive</h1>
+    <main>
+      <section class="hero">
+        <div class="hero__img">
+          <img src="/img/mans.jpg" alt="people see picture" />
+        </div>
+        <div class="hero__information">
+          <h1 class="hero__information-h1">Modern Art Gallery</h1>
+          <p class="hero_information-description">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+        </div>
+        <div class="hero__button">
+          <a href="#"
+            >Our Location
+            <span class="hero__button-mayor"
+              ><img src="/img/mayor.svg" alt="" /></span
+          ></a>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__information">
+          <img src="/img/manseepictures.jpg" alt="" />
+          <h2 class="gallery__information-title">YOUR DAY AT THE GALLERY</h2>
+          <p class="gallery__information-subtitle">
+            Wander through our distinct collections and find new insights about
+            our artists. Dive into the details of their creative process.
+          </p>
+        </div>
+        <div class="gallery__photos">
+          <img src="/img/picture.jpg" alt="" />
+          <img src="/img/manseepictures.jpg" alt="" />
+        </div>
+      </section>
+      <section class="come">
+        <h2 class="come__title">COME & BE INSPIRED</h2>
+        <p class="come__subtitle">
+          We’re excited to welcome you to our gallery and see how our
+          collections influence you.
+        </p>
+      </section>
+      <footer class="footer">
+        <div class="footer__information">
+        <img
+          class="footer__information-logo"
+          src="/img/MODERNARTGALLERY.svg"
+          alt=""
+        />
+        <p class="footer__inforamtion-description">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        </div>
+        <div class="footer__redes">
+          <img class="footer__redes-facebook" src="/img/facebook.svg" alt="facebook">
+          <img class="footer__redes-instagram" src="/img/instagram.svg" alt="">
+          <img class="footer__redes-tweeter" src="img/tweeter.svg" alt="">
+        </div>
+      </footer>
+    </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>
