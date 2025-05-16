@@ -35,20 +35,22 @@
 
     &__button{
         display: flex;
-        padding: 0 16px;
+        margin-left: 16px;
+        width: 260px;
         
         
         &-boton {
-            display: flex;
+            
             align-items: center;
-            justify-content: center;
+            
+            
             
             
         }
         &-mayor{
                 background-color: $color-orange;
                 width: 56px;
-                display:inline-block;
+                
             }
     }
 
