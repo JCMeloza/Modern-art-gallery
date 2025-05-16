@@ -28,11 +28,27 @@
 
 @mixin button($bg-color: $color-black, $color: white) {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 24px 35px 24px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3.64px;
   color: $color;
+  font-family: $title-font;
   background-color: $bg-color;
   text-decoration: none;
   text-transform: uppercase;
+  &::after {
+        content: "";
+        position: absolute;
+        background: url("../img/mayor.svg") no-repeat center/contain;
+        background-size: 10px 24px;
+        
+        width: 56px;
+        height: 72px;
+        bottom: 226px;
+        right: 132px;
+        background-color: $color-orange;
+      }
   &:hover {
     background-color: #666ca3;
   }
