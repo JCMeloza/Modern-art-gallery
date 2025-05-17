@@ -26,10 +26,9 @@
   }
 }
 
-@mixin button($bg-color: $color-black, $color: white) {
+@mixin button($bg-color: $color-black, $color: white, $rotate: false) {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $title-font;
@@ -39,9 +38,21 @@
   height: 60px;
   background-color: $bg-color;
   color: $color;
-
+  flex-direction: row;
+  
+  @if $rotate {
+    flex-direction: row-reverse;
+    .button__text {
+      padding-left: 32px;
+    }
+    .button__icon {
+      transform: rotate(180deg);
+    }
+  }
+  
   .button__text {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     font-family: $title-font;
   }
 
@@ -54,9 +65,10 @@
     background-position: center;
     background-size: 8px 24px;
   }
-  &:hover{
+  
+  &:hover {
     background-color: $color-orange;
-    .button__icon{
+    .button__icon {
       background-color: black;
     }
   }
