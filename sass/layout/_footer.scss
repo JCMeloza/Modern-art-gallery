@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+.footer{
+    background-color: $color-black;
+    color: white;
+    padding: 48px 32px;
+    height: 340px;
+
+    &__information{
+        margin-bottom: 38px;
+        &-logo{
+            margin-bottom: 38px;
+            width: 111px ;
+        }
+
+        &-description{
+            line-height: 26px;
+            font-weight: 100;
+            font-size: 17px;
+            width: 94%;
+        }
+    }
+
+    &__redes{
+        margin-bottom: 48px;
+        img{
+            margin-right: 22px;
+        }
+    }
+}
