@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
 
-main{
+.main{
     padding: 0 16px;
 }
 .gallery{
@@ -56,4 +56,12 @@ main{
         line-height: 28px;
         font-weight: 100;
     }
+}
+//pagina location.html
+
+.main__location{
+    padding: 0;
+}
+.location{
+    background-color: $color-black;
 }
