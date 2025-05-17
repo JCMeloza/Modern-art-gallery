@@ -1,4 +1,59 @@
+@use "../abstracts/variables" as *;
 
+main{
+    padding: 0 16px;
+}
 .gallery{
     margin-top: 120px;
+    margin-bottom: 16px;
+
+    &__information{
+        margin-bottom: 32px;
+        img{
+            height: 320px;
+        }
+        &-title{
+            font-family: $title-font;
+            font-size: 50px;
+            line-height: 50px;
+            margin-top: 25px;
+            font-weight: 900;
+            margin-bottom: 21px;
+        }
+        &-subtitle{
+            line-height: 28px;
+            font-size: 21px;
+            font-weight: 200;
+
+        }
+    }
+    &__photos-picture{
+        margin-bottom: 16px;
+        height: 480px;
+        
+    }
+    &__photos-people{
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.come{
+    background-color: $color-black;
+    margin-bottom: 120px;
+    color: white;
+    height: 293px;
+    &__title{
+        font-family: $title-font;
+        font-size: 50px;
+        font-weight: 900;
+        padding: 48px 24px 24px 24px;
+        line-height: 45px;
+    }
+    &__subtitle{
+        padding: 0 24px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 100;
+    }
 }
