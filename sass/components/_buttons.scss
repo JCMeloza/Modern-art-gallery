@@ -1,4 +1,9 @@
 @use "../abstracts/mixins" as b;
+
 .button {
-    @include b.button();
+    @include b.button($rotate: false);
+}
+
+.button--reverse {
+    @include b.button($rotate: true);
 }
