@@ -1,30 +1,52 @@
 @use "../abstracts/variables" as *;
 
-.footer{
-    background-color: $color-black;
-    color: white;
-    padding: 48px 32px;
-    height: 340px;
+.footer {
+  background-color: $color-black;
+  color: white;
+  padding: 48px 32px;
+  height: 340px;
 
-    &__information{
-        margin-bottom: 38px;
-        &-logo{
-            margin-bottom: 38px;
-            width: 111px ;
-        }
-
-        &-description{
-            line-height: 26px;
-            font-weight: 100;
-            font-size: 17px;
-            width: 94%;
-        }
+  &__information {
+    margin-bottom: 38px;
+    &-logo {
+      margin-bottom: 38px;
+      width: 111px;
     }
 
-    &__redes{
-        margin-bottom: 48px;
-        img{
-            margin-right: 22px;
-        }
+    &-description {
+      line-height: 26px;
+      font-weight: 100;
+      font-size: 17px;
+      width: 94%;
+    }
+  }
+
+  &__redes {
+    margin-bottom: 48px;
+    img {
+      margin-right: 22px;
+    }
+  }
+}
+
+.footer--dark {
+  background-color: $color-orange;
+  color: $color-black;
+
+    .footer__information-logo {
+        background-color: black;
+        width: 111px;
+        height: 40px;
+        mask-image: url("/img/MODERNARTGALLERY.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+    .footer__social-link-facebook{
+        width: 22px;
+        height: 22px;
+        background-color: black;
+        mask-image: url("/img/facebook.svg");
+        mask-repeat: no-repeat;
+        mask-size: contain;
     }
 }
