@@ -41,12 +41,27 @@
         mask-repeat: no-repeat;
         mask-size: contain;
     }
-    .footer__social-link-facebook{
+    .footer__social{
+      display: flex;
+      gap: 20px;
+      &-redes{
         width: 22px;
         height: 22px;
         background-color: black;
-        mask-image: url("/img/facebook.svg");
         mask-repeat: no-repeat;
         mask-size: contain;
+      }
+      .facebook{
+        mask-image: url("/img/facebook.svg");
+      }
+      .instagram{
+        mask-image: url("/img/instagram.svg");
+
+      }
+      .tweeter{
+        mask-image: url("/img/tweeter.svg");
+
+      }
     }
+    
 }
