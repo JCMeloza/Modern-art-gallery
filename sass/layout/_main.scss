@@ -84,9 +84,10 @@
   @include b.breakpoint(tablet) {
     width: 280px;
     position: absolute;
-    right: 37px;
+    right: 5%;
     top: 152%;
     height: 396px;
+    
   }
   &__title {
     font-family: $title-font;
