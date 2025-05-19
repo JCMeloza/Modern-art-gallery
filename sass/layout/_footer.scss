@@ -1,16 +1,27 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as b;
 
 .footer {
   background-color: $color-black;
   color: white;
   padding: 48px 32px;
   height: 340px;
+  @include b.breakpoint(tablet) {
+    display: flex;
+    padding: 56px 40px;
+  }
 
   &__information {
     margin-bottom: 38px;
+    @include b.breakpoint(tablet) {
+    display: flex;
+  }
     &-logo {
       margin-bottom: 38px;
       width: 111px;
+      @include b.breakpoint(tablet) {
+    margin-bottom: 130px;
+  }
     }
 
     &-description {
@@ -18,6 +29,12 @@
       font-weight: 100;
       font-size: 17px;
       width: 94%;
+      @include b.breakpoint(tablet) {
+        width: 250px;
+        margin-left: 66px;
+        margin-right: 133px;
+        font-size: 16px;
+      }
     }
   }
 
@@ -25,13 +42,19 @@
     margin-bottom: 48px;
     img {
       margin-right: 22px;
+      @include b.breakpoint(tablet) {
+        margin-left: 20px;
+        margin-right: 0;
+  }
     }
+    
   }
 }
 
 .footer--dark {
   background-color: $color-orange;
   color: $color-black;
+  
 
     .footer__information-logo {
         background-color: black;
