@@ -1,102 +1,145 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as b;
 
-.main{
-    padding: 0 16px;
+.main {
+  padding: 0 16px;
+  @include b.breakpoint(tablet) {
+    padding: 0 40px;
+  }
 }
-.gallery{
-    margin-top: 120px;
-    margin-bottom: 16px;
+.gallery {
+  margin-top: 120px;
+  margin-bottom: 16px;
 
-    &__information{
-        margin-bottom: 32px;
-        img{
-            height: 320px;
-        }
-        &-title{
-            font-family: $title-font;
-            font-size: 50px;
-            line-height: 50px;
-            margin-top: 25px;
-            font-weight: 900;
-            margin-bottom: 21px;
-        }
-        &-subtitle{
-            line-height: 28px;
-            font-size: 21px;
-            font-weight: 200;
+  &__information {
+    margin-bottom: 32px;
 
-        }
+    img {
+      height: 320px;
+      @include b.breakpoint(tablet) {
+        height: 400px;
+        width: 398px;
+        order: 3;
+      }
     }
-    &__photos-picture{
-        margin-bottom: 16px;
-        height: 480px;
-        
+    @include b.breakpoint(tablet) {
+      display: flex;
+      height: 400px;
+      margin-bottom: 11px;
     }
-    &__photos-people{
-        height: 200px;
-        width: 100%;
+    .gallery__text {
+      @include b.breakpoint(tablet) {
+        width: 228px;
+        margin-right: 68px;
+      }
     }
-}
-
-.come{
-    background-color: $color-black;
-    margin-bottom: 120px;
-    color: white;
-    height: 293px;
-    &__title{
-        font-family: $title-font;
-        font-size: 50px;
-        font-weight: 900;
-        padding: 48px 24px 24px 24px;
-        line-height: 45px;
+    &-title {
+      font-family: $title-font;
+      font-size: 50px;
+      line-height: 50px;
+      margin-top: 25px;
+      font-weight: 900;
+      margin-bottom: 21px;
     }
-    &__subtitle{
-        padding: 0 24px;
+    &-subtitle {
+      line-height: 28px;
+      font-size: 21px;
+      font-weight: 200;
+      @include b.breakpoint(tablet) {
         font-size: 18px;
-        line-height: 28px;
-        font-weight: 100;
+      }
     }
+  }
+
+  &__photos {
+    @include b.breakpoint(tablet) {
+      display: flex;
+      gap: 11px;
+    }
+    &-picture {
+      margin-bottom: 16px;
+      height: 480px;
+      @include b.breakpoint(tablet) {
+        height: 720px;
+        width: 398px;
+      }
+    }
+
+    &-people {
+      height: 200px;
+      width: 100%;
+      @include b.breakpoint(tablet) {
+        width: 280px;
+        height: 313px;
+      }
+    }
+  }
+}
+
+.come {
+  background-color: $color-black;
+  margin-bottom: 120px;
+  color: white;
+  height: 293px;
+  @include b.breakpoint(tablet) {
+    width: 280px;
+    position: absolute;
+    right: 37px;
+    top: 152%;
+    height: 396px;
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 48px 24px 24px 24px;
+    line-height: 45px;
+  }
+  &__subtitle {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 100;
+  }
 }
 //pagina location.html
 
-.main__location{
-    padding: 0;
+.main__location {
+  padding: 0;
 }
-.location{
+.location {
+  color: white;
+  background-color: $color-black;
+  padding: 16px;
+  &__info-title {
     color: white;
-    background-color: $color-black;
-    padding: 16px;
-    &__info-title{
-        color: white;
-        margin-top: 48px;
-        text-transform: uppercase;
-        font-size: 50px;
-        font-family: $title-font;
-        line-height: 50px;
+    margin-top: 48px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: $title-font;
+    line-height: 50px;
+  }
+  &__info-address {
+    margin-top: 48px;
+    h2 {
+      color: $color-orange;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-family: $title-font;
+      line-height: 32px;
+      margin-bottom: 20px;
     }
-    &__info-address{
-        margin-top: 48px;
-        h2{
-            color: $color-orange;
-            text-transform: uppercase;
-            font-size: 32px;
-            font-family: $title-font;
-            line-height: 32px;
-            margin-bottom: 20px;
-        }
-
-       
-    }
-     &__info-details{
-            font-weight: 200;
-            line-height: 28px;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-    &__info-description{
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 200;
-        width: 91%;
-    }
+  }
+  &__info-details {
+    font-weight: 200;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &__info-description {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 200;
+    width: 91%;
+  }
 }
