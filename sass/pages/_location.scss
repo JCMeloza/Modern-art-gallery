@@ -12,6 +12,9 @@
             height: 100%;
             object-fit: cover;
         }
+        @include m.breakpoint(tablet){
+            height: 600px;
+        }
     
 
     .header__button {
@@ -21,6 +24,9 @@
         margin: 0;
         &-boton {
             @include m.button($bg-color: $color-black, $color: white, $rotate: true);
+        }
+        @include m.breakpoint(tablet){
+            left:39px
         }
     }
 }
