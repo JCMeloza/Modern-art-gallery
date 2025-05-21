@@ -2,9 +2,34 @@
 @use "../abstracts/mixins" as b;
 
 .header {
+  
   @include b.breakpoint(tablet) {
     display: flex;
   }
+  .container__black{
+    display: none;
+    @include b.breakpoint(desktop){
+      width: 450px;
+      height: 800px;
+      background-color: black;
+      display: block;
+    }
+    &-logo{
+      display:block;
+      background-image: url("../img/MODERNARTGALLERY.svg");
+      width: 390px;
+      height: 176px;
+      overflow:visible;
+      background-position: center;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+      top: 190px;
+      left:168px;
+    }
+  }
+  
   &__img {
     width: 100%;
     height: 267px;
@@ -12,6 +37,10 @@
     @include b.breakpoint(tablet) {
       height: 700px;
       width: 437px;
+    @include b.breakpoint(desktop){
+      width: 540px;
+      height: 800px;
+    }
     }
     img {
       position: relative;
@@ -20,11 +49,15 @@
       @include b.breakpoint(tablet) {
         top: 0;
       }
+      @include b.breakpoint(desktop){
+        height: 800px;
+      }
     }
   }
 
   &__information {
     padding: 32px 16px 32px 16px;
+    
     @include b.breakpoint(tablet) {
       position: relative;
       right: 8%;
@@ -37,11 +70,24 @@
       font-family: $title-font;
       width: 86%;
       color: $color-black;
+      @include b.breakpoint(desktop){
+        position: relative;
+        top:18px;
+        left: -185%;
+        width: 514px;
+        height: 176px;
+        color:black;
+        visibility: hidden;
+      }
     }
 
     &-description {
       font-size: 18px;
       line-height: 1.5;
+      @include b.breakpoint(desktop){
+        position: relative;
+        top:-198px
+    }
     }
   }
 
@@ -49,6 +95,15 @@
     display: flex;
     width: 260px;
     margin-top: 32px;
+    @include b.breakpoint(desktop){
+      position: relative;
+      top:-198px
+    }
+    @include b.breakpoint(desktop){
+      margin-top: 64px;
+    }
+      
+    
 
     &-boton {
       align-items: center;
