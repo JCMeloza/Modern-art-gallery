@@ -9,6 +9,9 @@
     display: flex;
     padding: 56px 40px;
   }
+  @include b.breakpoint(tablethorizontal){
+    justify-content: space-around;
+  }
 
   &__information {
     margin-bottom: 38px;
