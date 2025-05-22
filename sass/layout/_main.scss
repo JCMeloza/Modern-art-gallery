@@ -128,7 +128,7 @@
     width: 280px;
     position: absolute;
     right: 40px;
-    top: 733px; 
+    top: 742px; 
     height: 396px;
     margin-bottom: 0;
   }
@@ -165,11 +165,16 @@
   @include b.breakpoint(tablet){
         padding:40px
         }
+  @include b.breakpoint(desktop){
+    padding: 104px 165px;
+    
+  }      
   &__info{
     @include b.breakpoint(tablet){
       display:flex;
       gap: 68px;
     }
+    
     &-title{
         color: white;
         margin-top: 48px;
@@ -179,6 +184,11 @@
         line-height: 50px;
         @include b.breakpoint(tablet){
           width: 223px;
+        }
+        @include b.breakpoint(desktop){
+          font-size: 70px;
+          line-height: 70px;
+          margin-right: 100px;
         }
     }
 
