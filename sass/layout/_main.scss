@@ -108,6 +108,9 @@
       @include b.breakpoint(tablethorizontal){
         width: 90%;
       }
+      @include b.breakpoint(desktopxl){
+        width: 56%;
+      }
     }
 
     &-people {
