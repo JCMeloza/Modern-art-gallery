@@ -69,7 +69,9 @@
 .footer--dark {
   background-color: $color-orange;
   color: $color-black;
-
+  @include b.breakpoint(desktop){
+    padding-left: 78px;
+  }
   .footer__information-logo {
     width: 111px;
     height: 40px;
