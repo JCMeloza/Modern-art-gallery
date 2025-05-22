@@ -20,6 +20,9 @@
     position: relative;
     width: 65%;
   }
+  @include b.breakpoint(tablethorizontal){
+    width: 100%;
+  }
   @include b.breakpoint(desktop) {
     width: 100%;
   }
@@ -101,6 +104,9 @@
       }
       @include b.breakpoint(desktop){
         width: 540px;
+      }
+      @include b.breakpoint(tablethorizontal){
+        width: 90%;
       }
     }
 
