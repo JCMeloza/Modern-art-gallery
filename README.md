@@ -2,6 +2,10 @@
 
 Este proyecto es un sitio web responsivo para una galería de arte moderna, desarrollado utilizando HTML5, SASS y siguiendo la metodología BEM para la estructuración del CSS.
 
+#Ver el Proyecto en GitHub Pages.
+
+https://jcmeloza.github.io/Modern-art-gallery/
+
 ## Características
 
 - Diseño totalmente responsivo
